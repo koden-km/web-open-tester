@@ -1,0 +1,26 @@
+{
+  "name": "Web Open Tester",
+  "short_name": "OpenTester",
+  "display": "standalone",
+  "background_color": "#cccccc",
+  "theme_color": "#00adff",
+  "start_url": "/web-open-tester/index.html",
+  "scope": "/web-open-tester/",
+  "icons": [
+    {
+      "src": "/web-open-tester/icon-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/web-open-tester/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/web-open-tester/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
