@@ -23,7 +23,17 @@
 
 <body>
   <h1>Web Open Tester</h1>
-  <p>TO DO</p>
+  <p>Test opening pages via different methods.</p>
+  <ul>
+    <li><a href="page-local.html">[a] in scope</a></li>
+    <li><a href="https://github.com">[a] out of scope</a></li>
+    <li><a href="page-local.html" target="_blank">[a] target _blank</a></li>
+    <li><a href="page-local.html" target="other">[a] target other</a></li>
+    <li><button onclick="document.location.href='./page-local.html'">document.location.href=page-local</button></li>
+    <li><button onclick="window.open('./page-local.html')">window.open(page-local, [default target])</button></li>
+    <li><button onclick="window.open('./page-local.html', '_blank')">window.open(page-local, _blank)</button></li>
+    <li><button onclick="window.open('./page-local.html', 'other')">window.open(page-local, other)</button></li>
+  <ul>
 </body>
 
 </html>
