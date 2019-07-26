@@ -1,6 +1,6 @@
 const CACHE_NAME = 'cache:2019-07-25';
 
-const basePath = '/web-open-tester/';
+const basePath = './';
 
 self.addEventListener('install', e => {
   e.waitUntil(
