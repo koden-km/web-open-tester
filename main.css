@@ -1,3 +1,11 @@
 body {
   background: #cad6ee;
 }
+
+li {
+  padding: 0.25em;
+}
+
+ul {
+  font-size: 1.25em;
+}
