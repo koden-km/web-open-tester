@@ -25,14 +25,30 @@
   <h1>Web Open Tester</h1>
   <p>Test opening pages via different methods.</p>
   <ul>
-    <li><a href="page-local.html">[a] in scope</a></li>
-    <li><a href="https://github.com">[a] out of scope</a></li>
-    <li><a href="page-local.html" target="_blank">[a] target _blank</a></li>
-    <li><a href="page-local.html" target="other">[a] target other</a></li>
+
+    <li><a href="page-local.html">&lt;a href=page-local [no target given]&gt;</a></li>
+    <li><a href="page-local.html" target="_blank">&lt;a href=page-local target=_blank&gt;</a></li>
+    <li><a href="page-local.html" target="named">&lt;a href=page-local target=named&gt;</a></li>
+
+    <li><a href="https://github.com/">&lt;a href=page-external [no target given]&gt;</a></li>
+    <li><a href="https://github.com/" target="_blank">&lt;a href=page-external target=_blank&gt;</a></li>
+    <li><a href="https://github.com/" target="named">&lt;a href=page-external target=named&gt;</a></li>
+
     <li><button onclick="document.location.href='./page-local.html'">document.location.href=page-local</button></li>
-    <li><button onclick="window.open('./page-local.html')">window.open(page-local, [default target])</button></li>
-    <li><button onclick="window.open('./page-local.html', '_blank')">window.open(page-local, _blank)</button></li>
-    <li><button onclick="window.open('./page-local.html', 'other')">window.open(page-local, other)</button></li>
+    <li><button onclick="document.location.href='https://github.com/'">document.location.href=page-external</button></li>
+
+    <li><button onclick="window.open('./page-local.html')">window.open(page-local, [no target given])</button></li>
+    <li><button onclick="window.open('./page-local.html', '_blank')">window.open(page-local, target=_blank)</button></li>
+    <li><button onclick="window.open('./page-local.html', 'named')">window.open(page-local, target=named)</button></li>
+    <li><button onclick="window.open('./page-local.html', '_blank', 'width=640,height=480')">window.open(page-local, target=_blank, features=size)</button></li>
+    <li><button onclick="window.open('./page-local.html', 'named', 'width=640,height=480')">window.open(page-local, target=named, features=size)</button></li>
+
+    <li><button onclick="window.open('https://github.com/')">window.open(page-external, [no target given])</button></li>
+    <li><button onclick="window.open('https://github.com/', '_blank')">window.open(page-external, target=_blank)</button></li>
+    <li><button onclick="window.open('https://github.com/', 'named')">window.open(page-external, target=named)</button></li>
+    <li><button onclick="window.open('https://github.com/', '_blank', 'width=640,height=480')">window.open(page-external, target=_blank, features=size)</button></li>
+    <li><button onclick="window.open('https://github.com/', 'named', 'width=640,height=480')">window.open(page-external, target=named, features=size)</button></li>
+
   </ul>
 </body>
 

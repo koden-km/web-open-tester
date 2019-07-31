@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cache:2019-07-25';
+const CACHE_NAME = 'cache:2019-07-31';
 
 const basePath = './';
 
@@ -7,6 +7,7 @@ self.addEventListener('install', e => {
     caches.open(CACHE_NAME).then(cache => {
       return cache.addAll([
         basePath,
+        basePath + 'manifest.webmanifest',
         basePath + 'index.html',
         basePath + 'index.js',
         basePath + 'main.css',
