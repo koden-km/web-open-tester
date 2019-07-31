@@ -9,3 +9,7 @@ li {
 ul {
   font-size: 1.25em;
 }
+
+a {
+  text-decoration: none;
+}
